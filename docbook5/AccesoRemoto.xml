@@ -1,0 +1,140 @@
+<chapter>
+<section>
+		<section>
+			<title>VNC</title>
+					<section>
+							<para>Lo primero que hicimos fue instalar el VNC para poder acceder a la máquina remota.</para>
+							<para></para>
+								<imageobject>
+									<imagedata scale="75" fileref="fotos/Captura de pantalla de 2013-09-27 08:29:12.png" format="PNG"/>
+								</imageobject>
+							<para>Configuramos el servidor VNC.</para>
+							<para></para>
+								<imageobject>
+									<imagedata scale="75" fileref="fotos/Captura de pantalla de 2013-09-27 08:33:08.png" format="PNG"/>
+								</imageobject>
+							<para>Finaliza la instalación.</para>
+							<para></para>
+								<imageobject>
+									<imagedata scale="75" fileref="fotos/Captura de pantalla de 2013-09-27 08:33:21.png" format="PNG"/>
+								</imageobject>
+							<para>Abrimos el VNC en el servidor.</para>
+							<para></para>
+								<imageobject>
+									<imagedata scale="75" fileref="fotos/Captura de pantalla de 2013-09-27 08:33:38.png" format="PNG"/>
+								</imageobject>
+							<para>Instalamos el VNC en el cliente.</para>
+							<para></para>
+								<imageobject>
+									<imagedata scale="75" fileref="fotos/Captura de pantalla de 2013-09-27 08:46:00.png" format="PNG"/>
+								</imageobject>
+							<para>Conectamos el cliente con el servidor.</para>
+							<para></para>
+								<imageobject>
+									<imagedata scale="75" fileref="fotos/Captura de pantalla de 2013-09-27 08:48:13.png" format="PNG"/>
+								</imageobject>
+							<para>Los dos Windows conectados con VNC.</para>
+							<para></para>
+								<imageobject>
+									<imagedata scale="25" fileref="fotos/Captura de pantalla de 2013-09-27 08:50:36.png" format="PNG"/>
+								</imageobject>
+							<para>Windows y Debian conectados con VNC.</para>
+							<para></para>
+								<imageobject>
+									<imagedata scale="25" fileref="fotos/Captura de pantalla de 2013-09-27 12:13:26.png" format="PNG"/>
+								</imageobject>
+							<para>Los dos Debian conectados con VNC.</para>
+							<para></para>
+								<imageobject>
+									<imagedata scale="25" fileref="fotos/Captura de pantalla de 2013-09-27 13:16:12.png" format="PNG"/>
+								</imageobject>
+							<para>Debian y Windows conectados con VNC.</para>
+							<para></para>
+								<imageobject>
+									<imagedata scale="25" fileref="fotos/Captura de pantalla de 2013-09-27 13:18:39.png" format="PNG"/>
+								</imageobject>
+					</section>
+		</section>
+		<section>
+			<title>Escritorio Remoto</title>
+					<section>
+							<para>Configurando el escritorio remoto de Linux.</para>
+							<para></para>
+								<imageobject>
+									<imagedata scale="75" fileref="fotos/Captura de pantalla de 2013-10-01 09:14:37.png" format="PNG"/>
+								</imageobject>
+							<para>Debian y Debian conectados con Escritorio Remoto.</para>
+							<para></para>
+								<imageobject>
+									<imagedata scale="25" fileref="fotos/Captura de pantalla de 2013-10-01 09:44:46.png" format="PNG"/>
+								</imageobject>
+							<para>Comando para arancar el vino server.</para>
+							<para></para>			
+								<imageobject>
+									<imagedata scale="40" fileref="fotos/Captura de pantalla de 2013-10-01 09:46:09.png" format="PNG"/>
+								</imageobject>
+							<para>Configurando escritorio remoto en Windows.</para>
+							<para></para>			
+								<imageobject>
+									<imagedata scale="75" fileref="fotos/Captura de pantalla de 2013-10-01 10:00:30.png" format="PNG"/>
+								</imageobject>
+							<para>Windows y Windows conectados con Escritorio Remoto.</para>
+							<para></para>			
+								<imageobject>
+									<imagedata scale="40" fileref="fotos/Captura de pantalla de 2013-10-01 10:02:28.png" format="PNG"/>
+								</imageobject>
+							<para>Debian y Windows conectados con Escritorio Remoto.</para>
+							<para></para>
+								<imageobject>
+									<imagedata scale="40" fileref="fotos/Captura de pantalla de 2013-10-01 10:11:29.png" format="PNG"/>
+								</imageobject>
+					</section>
+		</section>
+		<section>
+			<title>Terminal Server</title>
+					<section>
+							<para>Asistencia de instalación.</para>
+							<para></para>
+								<imageobject>
+									<imagedata scale="50" fileref="fotos/Captura de pantalla de 2013-10-02 10:18:29.png" format="PNG"/>
+								</imageobject>
+							<para>Demostración de que está funcionando de manera correcta el Terminal Server.</para>
+							<para></para>
+								<imageobject>
+									<imagedata scale="50" fileref="fotos/Captura de pantalla de 2013-10-02 10:38:48.png" format="PNG"/>
+								</imageobject>
+							<para>Probando una aplicación con el Terminal Server en Windows.</para>
+							<para></para>			
+								<imageobject>
+									<imagedata scale="30" fileref="fotos/Captura de pantalla de 2013-10-02 10:41:31.png" format="PNG"/>
+								</imageobject>
+							<para>Probando una aplicación con el Terminal Server en Debian.</para>
+							<para></para>			
+								<imageobject>
+									<imagedata scale="30" fileref="fotos/Captura de pantalla de 2013-10-02 11:18:38.png" format="PNG"/>
+								</imageobject>
+					</section>
+		</section>
+		<section>
+			<title>RemoteApp</title>
+					<section>
+						
+							<para>Instalación RemoteApp.</para>
+							<para></para>			
+								<imageobject>
+									<imagedata scale="50" fileref="fotos/Captura de pantalla de 2013-10-04 08:25:58.png" format="PNG"/>
+								</imageobject>
+							<para>Programas añadidos para RemoteApp.</para>
+							<para></para>			
+								<imageobject>
+									<imagedata scale="50" fileref="fotos/Captura de pantalla de 2013-10-04 08:22:40.png" format="PNG"/>
+								</imageobject>
+							<para>Iniciando el RemoteApp.</para>
+							<para></para>			
+								<imageobject>
+									<imagedata scale="50" fileref="fotos/Captura de pantalla de 2013-10-04 08:27:26.png" format="PNG"/>
+								</imageobject>
+					</section>
+		</section>
+</section>
+</chapter>
