@@ -16,4 +16,5 @@ ADD1314
 	<pubdate><?dbtimestamp?></pubdate>
 </info>
 <xi:include href="AccesoRemoto.xml" />
+<xi:include href="clienteligero.xml" />
 </book>
