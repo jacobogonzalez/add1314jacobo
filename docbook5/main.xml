@@ -15,6 +15,6 @@ ADD1314
     </legalnotice>
 	<pubdate><?dbtimestamp?></pubdate>
 </info>
-<xi:include href="AccesoRemoto.xml" />
-<xi:include href="clienteligero.xml" />
+<xi:include href="files/t1/AccesoRemoto.xml" />
+<xi:include href="files/t1/clienteligero.xml" />
 </book>
