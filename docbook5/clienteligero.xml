@@ -19,7 +19,7 @@
 			<para>Lo primero que teníamos que hacer para realizar esta practica era instalar un sistema operativo Linux. Yo personalmente escogí uno llamado Easy peasy es una distribución basada en Ubuntu pero diseñada especialmente para los neetbook.</para>
 			<para></para>			
 				<imageobject>
-					<imagedata scale="40" fileref="fotos/easy.jpg" format="JPG"/>
+					<imagedata scale="40" fileref="picture/ltsp/easy.jpg" format="JPG"/>
 				</imageobject>
 				<para></para>
 				<para>Una vez hecho la instalación teníamos que instalar unos paquetes, para ellos lanzábamos estos comandos:
