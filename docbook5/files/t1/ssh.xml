@@ -1,0 +1,247 @@
+<chapter>
+	<title>SSH</title>
+		<section>
+			<title>Servidor Windows</title>
+			<itemizedlist>
+				<listitem>
+					<para>Servidor: Windows 2008 Server.</para>
+				</listitem>
+				<listitem>
+					<para>Cliente 1: Xubuntu.</para>
+				</listitem>
+				<listitem>
+					<para>Cliente 2: Windows 7.</para>
+				</listitem>
+			</itemizedlist>
+				<section>
+					<title>Servidor (Windows 2008 Server):</title>
+						<para>IP's del servidor Windows 2008 Server:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="75" fileref="../../picture/t1/ssh/adrian/serv/1_IP.png" format="PNG"/>
+						</imageobject>
+						<para>Añadimos en C:\Windows\System32\drivers\etc\hosts el equipo ssh-client1 y ssh-client2:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="75" fileref="../../picture/t1/ssh/adrian/serv/2_hosts.png" format="PNG"/>
+						</imageobject>
+						<para>Probamos hacer ping al cliente 1:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="50" fileref="../../picture/t1/ssh/adrian/serv/3_ping a clie1.png" format="PNG"/>
+						</imageobject>
+						<para>Probamos hacer ping al cliente 2:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="50" fileref="../../picture/t1/ssh/adrian/serv/4_ping a clie2.png" format="PNG"/>
+						</imageobject>
+						<para>Comprobamos que ambos clientes están conectados al servidor mediante SSH:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="75" fileref="../../picture/t1/ssh/adrian/serv/5_2 clie conectados.png" format="PNG"/>
+						</imageobject>
+				</section>
+				<section>
+					<title>Cliente 1 (Xubuntu):</title>
+						<para>IP's del cliente1 Xubuntu:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="75" fileref="../../picture/t1/ssh/adrian/clie1/1_IP.png" format="PNG"/>
+						</imageobject>
+						<para>Añadimos en /etc/hosts el equipo ssh-server y ssh-client2:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="50" fileref="../../picture/t1/ssh/adrian/clie1/2_hosts.png" format="PNG"/>
+						</imageobject>
+						<para>Probamos hacer ping al servidor:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="50" fileref="../../picture/t1/ssh/adrian/clie1/3_ping a serv.png" format="PNG"/>
+						</imageobject>
+						<para>Probamos hacer ping al cliente 2:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="50" fileref="../../picture/t1/ssh/adrian/clie1/4_ping a clie2.png" format="PNG"/>
+						</imageobject>
+						<para>Probamos conectarnos al servidor mediante SSH:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="50" fileref="../../picture/t1/ssh/adrian/clie1/5_clie1 a serv.png" format="PNG"/>
+						</imageobject>
+						<para>Conectados de manera correcta al servidor Windows 2008 Server:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="50" fileref="../../picture/t1/ssh/adrian/clie1/6_clie1 a serv.png" format="PNG"/>
+						</imageobject>
+						<para>Capturar la clave intercambiada en el primer proceso de conexión SSH:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="50" fileref="../../picture/t1/ssh/adrian/clie1/7_captura clave clie linux a serv.png" format="PNG"/>
+						</imageobject>
+						<para>Probamos hacer los demás pasos llegados a este etapa como por ejemplo el del punto 5 (Uso de SSH como túnel para X), pero nos da error ya que no se pueden realizar con un servidor windows:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="50" fileref="../../picture/t1/ssh/adrian/clie1/8_paso 5 error.png" format="PNG"/>
+						</imageobject>
+				</section>
+				<section>
+					<title>Cliente 2 (Windows 7):</title>
+						<para>IP's del cliente2 Windows 7:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="75" fileref="../../picture/t1/ssh/adrian/clie2/1_IP.png" format="PNG"/>
+						</imageobject>
+						<para>Añadimos en /etc/hosts el equipo ssh-server y ssh-client1:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="75" fileref="../../picture/t1/ssh/adrian/clie2/2_hosts.png" format="PNG"/>
+						</imageobject>
+						<para>Probamos hacer ping al servidor:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="60" fileref="../../picture/t1/ssh/adrian/clie2/3_ping a serv.png" format="PNG"/>
+						</imageobject>
+						<para>Probamos hacer ping al cliente 1:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="60" fileref="../../picture/t1/ssh/adrian/clie2/4_ping a clie1.png" format="PNG"/>
+						</imageobject>
+						<para>Probamos conectarnos al servidor mediante SSH:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="50" fileref="../../picture/t1/ssh/adrian/clie2/5_clie2 a serv.png" format="PNG"/>
+						</imageobject>
+						<para>Conectados de manera correcta al servidor Windows 2008 Server:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="50" fileref="../../picture/t1/ssh/adrian/clie2/6_clie2 a serv.png" format="PNG"/>
+						</imageobject>
+				</section>
+		</section>
+				<section>
+			<title>Servidor Linux</title>
+			<itemizedlist>
+				<listitem>
+					<para>Servidor: Xubuntu.</para>
+				</listitem>
+				<listitem>
+					<para>Cliente 1: Xubuntu.</para>
+				</listitem>
+				<listitem>
+					<para>Cliente 2: Windows XP.</para>
+				</listitem>
+			</itemizedlist>
+				<section>
+					<title>Instalación básica</title>
+						<para>Configurar el servidor ssh:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="60" fileref="../../picture/t1/ssh/jacobo/serv/host-ssh-server.png" format="PNG"/>
+						</imageobject>
+						<para>Configurar el cliente1 (Xubuntu) ssh:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="60" fileref="../../picture/t1/ssh/jacobo/clie1/host-ssh-client.png" format="PNG"/>
+						</imageobject>
+						<para>En Windows lo único que tenemos que hacer para configurar el ssh es instslar la aplicación putty.</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="60" fileref="../../picture/t1/ssh/jacobo/clie2/Captura de pantalla de 2013-10-29 10:00:39.png" format="PNG"/>
+						</imageobject>
+				</section>
+				<section>
+					<title>Personalización del prompt Bash</title>
+						<para>Para configurar el prompt bash tenemos que dirigirnos al servidor ssh y escribir la siguiente línea de comandos:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="60" fileref="../../picture/t1/ssh/jacobo/serv/colorbash.png" format="PNG"/>
+						</imageobject>
+						<para>Ahora nos vamos al cliente Xubuntu y nos conectamos mediante ssh al servidor y vemos que el prompt ha cambiado el color a rojo:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="60" fileref="../../picture/t1/ssh/jacobo/clie1/concecioncliete1.png" format="PNG"/>
+						</imageobject>
+				</section>
+				<section>
+					<title>Autenticación mediante claves públicas</title>
+						<para></para>
+						<imageobject>
+							<imagedata scale="60" fileref="../../picture/t1/ssh/jacobo/serv/capturadekeygen.png" format="PNG"/>
+						</imageobject>
+						<para>Modificamos distintos archivos del servidor para que nuestros clientes sean autentificados por claves públicas y no nos pida una contraseña a la hora de conectarnos:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="60" fileref="../../picture/t1/ssh/jacobo/clie1/clavespublicas.png" format="PNG"/>
+						</imageobject>
+				</section>
+				<section>
+					<title>Uso de SSH como túnel para X</title>
+						<para>Añadimos una línea más al archivo de configuración ssh-config como se ve en la siguiente imagen:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="60" fileref="../../picture/t1/ssh/jacobo/clie1/aplicacionserver-clientconfig.png" format="PNG"/>
+						</imageobject>
+						<para>Probamos una apliación que está instalada en el servidor pero no en el cliente, para ello nos conectamos mediante ssh al servidor y escribimos el siguiente comando ssh -X remoteuser1@ssh-server; geany:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="40" fileref="../../picture/t1/ssh/jacobo/clie1/aplicacionssh.png" format="PNG"/>
+						</imageobject>
+				</section>
+				<section>
+					<title>Aplicaciones Windows nativas</title>
+						<para>Nos conectamos con el cliente linux al servidor y ejecutamos el notepad:</para>
+						<para></para>
+						<para>Para poder ejecutar aplicaciones de windows nativas debemos instalar el wine:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="40" fileref="../../picture/t1/ssh/jacobo/serv/wine.png" format="PNG"/>
+						</imageobject>
+						<para>Para poder ejecutar aplicaciones de windows nativas desde un cliente windows tenemos que instslar el programa xming:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="75" fileref="../../picture/t1/ssh/jacobo/clie2/programacorreraplicacionenwindows.png" format="PNG"/>
+						</imageobject>
+						<para>Una vez instalado el programa anterior configuramos el putty como se ve en la siguient imagen:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="75" fileref="../../picture/t1/ssh/jacobo/clie2/configurarputtiparaaplicaciones.png" format="PNG"/>
+						</imageobject>
+						<para>Aquí vemos funcionando el notepad por ssh:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="60" fileref="../../picture/t1/ssh/jacobo/clie2/notepadwindows.png" format="PNG"/>
+						</imageobject>
+				</section>
+				<section>
+					<title>Restricciones de uso</title>
+						<para>La restrcción de tipo 1 no hay que hacer nada.</para>
+						<para></para>
+						<para>Para aplicar al restricción tipo 2, tenemos que dirigirnos al archivo /etc/sshd_config al final añadimos la línea DenyUsers remoteuser2 y queda aplicar la restriccón para que dicho usuario no pueda conectarse por ssh:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="75" fileref="../../picture/t1/ssh/jacobo/clie1/restriccion-total-2.png" format="PNG"/>
+						</imageobject>
+						
+						<para>Para aplicar al restricción tipo 3, tenemos que modificar el sguiente script:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="40" fileref="../../picture/t1/ssh/jacobo/script/script.png" format="PNG"/>
+						</imageobject>
+						<para>Lo ejecutamos pero nos dará error, ya que tenemos que usar una de las variables que se nos indica (--lock):</para>
+						<para></para>
+						<imageobject>
+						<imagedata scale="75" fileref="../../picture/t1/ssh/jacobo/script/ejecutarscript.png" format="PNG"/>
+						</imageobject>
+						<para>Los escribiremos de manera correcta "./limit.ssh.users.rb --lock":</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="75" fileref="../../picture/t1/ssh/jacobo/script/ejecutarscript.png" format="PNG"/>
+						</imageobject>
+						<para>Y lo ejecutaremos:</para>
+						<para></para>
+						<imageobject>
+							<imagedata scale="75" fileref="../../picture/t1/ssh/jacobo/script/script3.png" format="PNG"/>
+						</imageobject>
+				</section>
+		</section>
+</chapter>
