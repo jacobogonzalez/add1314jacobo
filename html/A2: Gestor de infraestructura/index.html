@@ -1,0 +1,98 @@
+<html>
+<head>
+	<title>T&iacute;tulo del trabajo</title>
+</head>
+<body>
+<div style='display:table-row; padding: 10px;'>
+  <div style='float: left; width=20%; padding:10px;'>
+  <img src='./files/logo.png'/>
+  </div>
+  <div style='float: left;padding:10px'>
+  <ul>
+    <li><b>M&oacute;dulo:</b> <i>Sistemas Operativos</i></li>
+    <li><b>T&iacute;tulo del trabajo</b> <i>Plantilla HTML de Puppet</i></li>
+    <li><b>Componentes del grupo:</b> <i>Adri&aacute;n del Saz Est&eacute;vez y Jacobo Gonz&aacute;lez Dorta</i></li>
+    <li><b>Curso Acad&eacute;mico:</b> <i>2013/2014</i></li>
+    <li><b>Fecha de entrega:</b> <i>12 de Marzo de 2014</i></li>
+  </ul>
+  </div>
+</div>
+<div style='float: clear;background-color: #eeeeee; border:2px solid; border-radius:10px; padding: 10px;'>
+<a href='#bloque1'>Requisitos</a> | <a href='#bloque2'>Puppet Master</a> | <a href='#bloque3'>Puppet Clients</a> | <a href='#final'>Conclusiones</a>
+</div>
+<h1><a id='bloque1'>Requisitos</a></h1>
+<p>
+	<h3>Master:</h3> 
+        Es la MV que dar&aacute; las &oacute;rdenes de instalaci&oacute;n configuraci&oacute;n a los clientes.</br>
+        IP est&aacute;tica 172.16.109.XX.</br>
+        Dominio = nombre-del-grupo.</br>
+</p>
+<p>
+    <h3>Client1:</h3>
+        MV que recibe &oacute;rdenes del master.</br>
+        IP est&aacute;tica 172.16.109.1XX.</br>
+        Dominio = nombre-del-grupo.</br>
+</p>
+<p>
+    <h3>Client2:</h3>
+        MV que recibe &oacute;rdenes del master, pero con un SO distinto de client1.</br>
+        IP est&aacute;tica 172.16.109.2XX.</br>
+        Dominio = nombre-del-grupo.</br>
+</p>
+<h1><a id='bloque2'>Puppet Master</a></h1>
+<p>
+Cambiamos nombre de m&aacute;quina: echo "master.nombregrupo" > /etc/hostname
+</p>
+<p>
+Modificamos /etc/resolv.conf y poner al comienzo:</br>
+domain nombregrupo</br>
+search nombregrupo
+</p>
+<p>
+A&ntilde;adimos a /etc/hosts los nombres de las MV's.</br>
+
+127.0.0.1 localhost</br>
+127.0.1.1 master.nombregrupo master</br>
+IP-master master.nombregrupo master</br>
+IP-client1 client1.nombregrupo client1</br>
+IP-client2 client2.nombregrupo client2
+</p>
+<p>
+Instalamos y configuramos Puppet en el master:</br>
+    apt-get install puppetmaster</br>
+    mkdir /etc/puppet/files</br>
+    mkdir /etc/puppet/manifests</br>
+    mkdir /etc/puppet/manifests/classes</br>
+    touch /etc/puppet/files/readme.txt</br>
+    touch /etc/puppet/manifests/site.pp</br>
+    touch /etc/puppet/manifests/classes/hostlinux1.pp</br>
+    </p>
+      <p>
+    Ejemplo del site.pp</br>
+    <img src='./files/master/sitepp.png'/></br></br>
+     Ejemplo del windows.pp</br>
+    <img src='./files/master/windowspp.png'/></br></br>
+</p>
+<p>
+Consultamos las peticiones pendiente de uni&oacute;n al master:
+	<h4>puppetca --list</h4>
+	<img src='./files/master/puppetcat-list.png'/></br></br>
+ Aceptar al nuevo cliente desde el master:</br>
+  <img src='./files/master/puppetcat--sing.png'/></br></br>
+Comprobamos con puppetca --print client1.nombregrupo</br>
+ <img src='./files/master/certificados.png'/></br>
+</p>
+
+<h1><a id='bloque3'>Puppet Clients</a></h1>
+Instalaremos tres programas (tree, traceroute y geany) en linux:</br>
+<img src='./files/clients/1.png'/></br></br>
+Una vez el anterior punto nos sali&oacute; correctamente, lo complicaremos un poco, a&ntilde;adiendo usuarios tambi&eacute;n:</br>
+<img src='./files/clients/2.png'/></br></br>
+Hecho en linux las dos configuraciones, nos pasaremos al cliente Windows donde crearemos un archivo de texto en el cliente:</br>
+<img src='./files/clients/3.png'/></br></br>
+Aqu&iacute; la prueba:</br>
+<img src='./files/clients/4.png'/></br></br>
+<h1><a id='final'>Conclusiones</a></h1>
+<p>Tuvimos dificultades a la hora de hacer el cliente Windows, debido a que en Linux era m&aacute;s sencillo y salia todo a la primera mientras que en Windows tuvimos que probar y probar cosas hasta conseguir dar con la soluci&oacute;n.</p>
+</body>
+</html>
